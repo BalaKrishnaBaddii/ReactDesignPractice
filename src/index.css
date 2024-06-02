@@ -1,6 +1,6 @@
 .box-main {
   background-color: rgb(168, 170, 163, 0.1);
-  height: 600px;
+  height: 550px;
   width: 350px;
   border: black solid 3px;
   border-width: 4px;
@@ -14,7 +14,7 @@
   width: 350px;
 }
 .profile-name {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -26,15 +26,18 @@
 }
 
 p {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 30px;
+  margin: 5px;
+  font-size: 15px;
 }
 
 .tags-block {
   display: flex;
   align-content: normal;
   flex-wrap: wrap;
-  margin-top: 0;
+  margin-top: 5px;
 }
 
 .tag-name {
@@ -47,6 +50,8 @@ p {
   font-size: 13px;
   align-items: center;
   font-family: monospace;
+  height: 8px;
+  width: auto;
 }
 
 #two.tag-name {
