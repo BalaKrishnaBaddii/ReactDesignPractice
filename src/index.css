@@ -43,6 +43,8 @@ p {
 .tag-name {
   background-color: rgb(71, 108, 218);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: bold;
   padding: 5px;
   margin: 5px;
