@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.box-main {
+  background-color: rgb(168, 170, 163, 0.1);
+  height: 600px;
+  width: 350px;
+  border: black solid 3px;
+  border-width: 4px;
+  margin-top: 40px;
+  margin-left: 20px;
+  border-style: solid;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.profile {
+  height: 275px;
+  width: 350px;
+}
+.profile-name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.bottom {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px;
+  display: grid;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 30px;
+}
+
+.tags-block {
+  display: flex;
+  align-content: normal;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.tag-name {
+  background-color: rgb(71, 108, 218);
+  display: flex;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  align-items: center;
+  font-family: monospace;
+}
+
+#two.tag-name {
+  background-color: rgb(168, 168, 15);
+}
+#three.tag-name {
+  background-color: rgb(104, 150, 100);
+}
+#four.tag-name {
+  background-color: rgb(237, 78, 10);
+}
+#five.tag-name {
+  background-color: rgb(90, 205, 207);
+}
+#six.tag-name {
+  background-color: rgb(224, 93, 0);
+}
+
+.tag-emoji {
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  align-items: center;
+  filter: brightness(0) saturate(100%) invert(91%) sepia(48%) saturate(1273%)
+    hue-rotate(347deg) brightness(110%) contrast(87%);
+}
+
+.tags-block-item {
+  display: flex;
 }
