@@ -56,22 +56,6 @@ p {
   width: auto;
 }
 
-#two.tag-name {
-  background-color: rgb(168, 168, 15);
-}
-#three.tag-name {
-  background-color: rgb(104, 150, 100);
-}
-#four.tag-name {
-  background-color: rgb(237, 78, 10);
-}
-#five.tag-name {
-  background-color: rgb(90, 205, 207);
-}
-#six.tag-name {
-  background-color: rgb(224, 93, 0);
-}
-
 .tag-emoji {
   height: 20px;
   width: 20px;

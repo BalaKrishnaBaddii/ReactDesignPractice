@@ -2,6 +2,15 @@ import React from "react";
 import ReactDom from "react-dom/client";
 import "./index.css";
 
+const Skills = [
+  { skill: "HTML+CSS", level: "Advanced", color: "#3554f0" },
+  { skill: "Java Script", level: "Intermediate", color: "#ecfc00" },
+  { skill: "Web Design", level: "Advanced", color: "#347540" },
+  { skill: "Git and Github", level: "Intermediate", color: "#e37449" },
+  { skill: "React", level: "Advanced", color: "#00ffae" },
+  { skill: "Sweltie", level: "Beginner", color: "#fc03a1" },
+];
+
 function App() {
   return (
     <div className="box-main">
@@ -33,20 +42,19 @@ function Intro() {
 function Skillset() {
   return (
     <div className="tags-block">
-      <Skill id="one" skill="HTML&CSS" emoji="💪" />
-      <Skill id="two" skill="Java Script" emoji="💪" />
-      <Skill id="three" skill="Web Design" emoji="💪" />
-      <Skill id="four" skill="Git and Github" emoji="💪" />
-      <Skill id="five" skill="React" emoji="💪" />
-      <Skill id="six" skill="Sweltie" emoji="💪" />
+      {Skills.map((skill) => (
+        <Skill skill={skill.skill} level={skill.level} color={skill.color} />
+      ))}
     </div>
   );
 }
-function Skill(props) {
+function Skill({ skill, level, color, emoji }) {
   return (
-    <div className="tag-name" id={props.id}>
-      <span>{props.skill}</span>
-      <span>{props.emoji}</span>
+    <div className="tag-name" style={{ backgroundColor: color }}>
+      <span>{skill}</span>
+      <span>{level === "Beginner" && "😒"}</span>
+      <span>{level === "Intermediate" && "👍"}</span>
+      <span>{level === "Advanced" && "💪"}</span>
     </div>
   );
 }
